@@ -1,0 +1,10 @@
+.services-item {
+    display: flex;
+    justify-content: space-between;
+    background: #f0f4f6;
+    padding: 0.5rem 4rem;
+}
+
+.services-item:nth-of-type(2n) {
+    background: white;
+}
