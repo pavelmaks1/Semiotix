@@ -19,6 +19,10 @@ body, h1, ul {
     display: none;
 }
 
+.flex {
+  flex: 1;
+}
+
 .active {
     color: #0093dd;
 }
