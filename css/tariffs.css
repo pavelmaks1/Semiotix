@@ -211,7 +211,10 @@
     font-size: 1.2rem;
   }
   .main-cell {
-    padding: 0 0.1rem;
+    padding: 0 0.5rem;
     line-height: inherit;
+  }
+  .base-cell {
+    font-size: 0.65rem;
   }
 }
