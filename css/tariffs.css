@@ -183,6 +183,20 @@
 @media screen and (max-width: 486px) {
   .base-cell {
     padding: 0.5rem 0;
+    word-wrap: break-word;
+  }
+  .first-cell, .base-cell {
+    word-wrap: break-word;
+    text-transform: inherit;
+  }
+  .container {
+    padding: 0 2%;
+  }
+  .button {
+    padding: 0.5rem;
+  }
+  .cell-text {
+    width: 50px;
   }
 }
 
@@ -195,5 +209,9 @@
   }
   .callback-title {
     font-size: 1.2rem;
+  }
+  .main-cell {
+    padding: 0 0.1rem;
+    line-height: inherit;
   }
 }
