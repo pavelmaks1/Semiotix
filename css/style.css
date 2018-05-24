@@ -20,7 +20,7 @@ body, h1, ul {
 }
 
 .flex {
-  flex: 1;
+    flex: 1;
 }
 
 .active {
@@ -82,8 +82,26 @@ body, h1, ul {
     font-weight: 300;
 }
 
+.basics-subtitle {
+    font-size: 1.2rem;
+}
+
 .grey {
     color: #a1a1a1;
+}
+
+.question-icon {
+    font-size: 1.4rem;
+    color: #DFE1E7;
+}
+
+.black {
+    color: black;
+}
+
+.basics-text {
+    color: #4D4D4D;
+    font-size: 0.95rem;
 }
 
 .bold {
@@ -98,6 +116,12 @@ body, h1, ul {
 
 .question-header:hover {
     color: #0093dd;
+}
+
+.question-container {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 .text-result {
@@ -246,8 +270,6 @@ body, h1, ul {
     margin-bottom: 5rem;
 }
 
-
-
 @media screen and (min-width: 1024px) {
     .differences-button {
         margin: 2rem 0 0 5rem;
@@ -311,7 +333,7 @@ body, h1, ul {
     .container {
         padding: 0 5%;
     }
-    .text-result, .inner-text{
+    .text-result, .inner-text {
         padding: 0;
     }
 }
