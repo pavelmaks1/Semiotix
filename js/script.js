@@ -2,6 +2,7 @@ const answer = Array.prototype.slice.call(document.getElementsByClassName('quest
 answer.map(element => 
     element.addEventListener('click', 
     (event) => {
+
         event.preventDefault();
         element.childNodes[1].classList.toggle('active');
         element.childNodes[3].classList.toggle('display');

@@ -32,9 +32,9 @@
 
 .helper-table {
   table-layout: fixed;
-  max-width: 100%;
-  margin: 4rem 0;
+  margin: 4rem auto;
   font-size: 0.8rem;
+  /* width: 100%; */
 }
 
 .main-cell {
@@ -43,6 +43,10 @@
   writing-mode: vertical-rl;
   transform: rotate(-180deg);
   border: 1px solid #e8ecee;
+  border-bottom-right-radius: 7%;
+  border-top-right-radius: 7%;
+  line-height: 1;
+  padding: 0 2rem;
 }
 
 .first-cell {
@@ -58,56 +62,138 @@
 .upper-cell {
   border: 1px solid #dddfe4;
   text-transform: uppercase;
-  padding: 1rem 1rem 0 1rem;
-  border-radius: 10%;
+  padding: 1.5rem 1rem;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
   line-height: 1;
 }
 
-.helper-table td {
+.base-cell {
   padding: 0.5rem;
-  word-wrap: break-word
+  word-wrap: break-word;
+  text-align: center;
+}
+
+.button-cell {
+  padding: 3rem 0;
+  text-align: center;
 }
 
 .helper-table tr {
   border: 1px solid #000;
 }
 
-@media screen and (max-width: 1132px) {
-  .helper-table td {
-    padding: 0.1rem;
+.table-mobile {
+  display: none;
+}
+
+.callback {
+  background: #48A5ED;
+}
+
+.callback-title {
+  margin: 0 auto;
+  max-width: 60%;
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.callback-container {
+  padding: 4rem 0;
+}
+
+.callback-form {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.callback-input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 3%;
+  color: #5E616B;
+  margin: 0.1rem;
+  font-size: 1rem;
+  width: 15rem;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: 800;
+  background: #77BC0F;
+  border: none;
+  width: 10rem;
+  cursor: pointer;
+}
+
+.button-table {
+  padding: 0.8rem 1.5rem;
+  border-radius: 5%;
+  text-transform: none;
+  /* font-size: 1rem; */
+  width: inherit;
+}
+
+@media screen and (max-width: 1478px) {
+  .helper-table {
+    /* width: 100%; */
   }
 }
 
-@media screen and (max-width: 1070px) {
-  .helper-table td {
-    padding: 0;
-  }
+@media screen and (max-width: 1220px) {
   .helper-table {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .helper-table {
-    font-size: 0.7rem;
+@media screen and (max-width: 1132px) {
+  .base-cell {
+    padding: 0.1rem;
   }
-  .upper-cell {
-    padding: 0.5rem 0 0 0;
-    font-size: 0.6rem;
-  }
-  .first-cell {
-    font-size: 0.55rem;
-    text-transform: none;
-  }
+}
 
+@media screen and (max-width: 1008px) {
+  .helper-table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .table-desktop {
+    display: none;
+  }
+  .table-mobile {
+    display: block;
+  }
+  .base-cell {
+    padding: 0.5rem 0.5rem;
+  }
+  .callback-form {
+    align-items: center;
+    flex-direction: column;
+  }
+  .callback .button {
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .base-cell {
+    padding: 0.5rem 0;
+  }
 }
 
 @media screen and (max-width: 415px) {
-  .helper-table {
-    font-size: 0.6rem;
+  .callback-input {
+    width: inherit;
   }
-  .upper-cell {
-    font-size: 0.5rem;
+  .callback .button {
+    width: inherit;
   }
-  .first-cell
+  .callback-title {
+    font-size: 1.2rem;
+  }
 }
