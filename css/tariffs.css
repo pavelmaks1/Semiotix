@@ -104,7 +104,7 @@
 }
 
 .callback-form {
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   display: flex;
   justify-content: center;
 }
@@ -178,6 +178,9 @@
   .callback .button {
     margin: 0.5rem 0;
   }
+  .callback-title {
+    padding: 1rem 0;
+  }
 }
 
 @media screen and (max-width: 486px) {
@@ -211,7 +214,7 @@
     font-size: 1.2rem;
   }
   .main-cell {
-    padding: 0 0.5rem;
+    padding: 0 1rem;
     line-height: inherit;
   }
   .base-cell {
