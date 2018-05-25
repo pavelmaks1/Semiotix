@@ -38,37 +38,40 @@
 }
 
 .main-cell {
+  font-size: 14px;
   font-weight: 700;
   text-align: center;
-  writing-mode: vertical-rl;
   transform: rotate(-180deg);
   border: 1px solid #e8ecee;
-  border-bottom-right-radius: 7%;
-  border-top-right-radius: 7%;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
   line-height: 1;
-  padding: 0 2rem;
 }
 
 .first-cell {
+  text-align: left;
   text-transform: uppercase;
   font-size: 0.7rem;
   color: #414141;
+  padding: 0 0.4rem;
 }
 
 .grey-cell {
-  background: #e8ecee;
+  background: #f4f6f7;
 }
 
 .upper-cell {
+  font-size: 16px;
   border: 1px solid #dddfe4;
   text-transform: uppercase;
-  padding: 1.5rem 1rem;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+  padding: 1rem 0.5rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   line-height: 1;
 }
 
 .base-cell {
+  font-size: 14px;
   padding: 0.5rem;
   word-wrap: break-word;
   text-align: center;
@@ -133,13 +136,16 @@
   padding: 0.8rem 1.5rem;
   border-radius: 5%;
   text-transform: none;
-  /* font-size: 1rem; */
   width: inherit;
 }
 
-@media screen and (max-width: 1478px) {
-  .helper-table {
-    /* width: 100%; */
+.button-call {
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 1220px) {
+  .main-cell {
+    padding: 1rem 2rem 1rem 2rem;
   }
 }
 
@@ -181,6 +187,9 @@
   .callback-title {
     padding: 1rem 0;
   }
+  .main-cell {
+    padding: 1rem 1.5rem;
+  }
 }
 
 @media screen and (max-width: 486px) {
@@ -191,6 +200,7 @@
   .first-cell, .base-cell {
     word-wrap: break-word;
     text-transform: inherit;
+    padding: 0.5rem 0;
   }
   .container {
     padding: 0 2%;
@@ -200,6 +210,9 @@
   }
   .cell-text {
     width: 50px;
+  }
+  .main-cell {
+    padding: 0.5rem 0 0 0;
   }
 }
 

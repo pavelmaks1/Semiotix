@@ -3,7 +3,7 @@
     src: url('../fonts/Gotham Cyrillic/GothaProReg.otf');
 }
 
-body, h1, ul {
+body, h1, ul, button, input {
     font-family: 'GothamPro', FallBack, sans-serif;
     margin: 0;
     padding: 0;
@@ -62,7 +62,6 @@ body, h1, ul {
 
 .basics-questions {
     max-width: 35%;
-    padding: 0 1rem;
 }
 
 .question-item {
@@ -90,6 +89,14 @@ body, h1, ul {
     color: #a1a1a1;
 }
 
+.m-size {
+    font-size: 14px;
+}
+
+.l-size {
+    font-size: 16px;
+}
+
 .question-icon {
     font-size: 1.4rem;
     color: #DFE1E7;
@@ -101,7 +108,7 @@ body, h1, ul {
 
 .basics-text {
     color: #4D4D4D;
-    font-size: 0.95rem;
+    max-width: 65%;
 }
 
 .bold {
@@ -109,13 +116,17 @@ body, h1, ul {
 }
 
 .question-header {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     font-weight: 700;
     cursor: pointer;
 }
 
 .question-header:hover {
     color: #0093dd;
+}
+
+.question-menu {
+    margin: 0 1rem;
 }
 
 .question-container {
@@ -178,6 +189,7 @@ body, h1, ul {
 
 .strategy-point-content {
     color: #3F3F3F;
+    font-size: 14px;
 }
 
 .strategy-content {
@@ -228,6 +240,11 @@ body, h1, ul {
     padding: 0.5rem 0;
     display: flex;
     font-size: 0.9rem;
+    align-items: flex-start;
+}
+
+.img-icon {
+    padding: 0 0.5rem 0 0;
 }
 
 .differences {
@@ -251,6 +268,12 @@ body, h1, ul {
     font-size: 0.95rem;
 }
 
+.differences-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .differences-button {
     padding: 0.75rem 1.75rem;
     background: #84d40a;
@@ -260,6 +283,8 @@ body, h1, ul {
     color: white;
     font-size: 0.9rem;
     cursor: pointer;
+    border-radius: 4px 4px;
+    margin: 1.5rem 0;
 }
 
 .differences-button:hover {
@@ -272,7 +297,7 @@ body, h1, ul {
 
 @media screen and (min-width: 1024px) {
     .differences-button {
-        margin: 2rem 0 0 5rem;
+        /* margin: 2rem 0 0 5rem; */
     }
 }
 
@@ -287,15 +312,8 @@ body, h1, ul {
 }
 
 @media screen and (max-width: 1210px) {
-    .strategy-content {
-        color: white;
-    }
     .strategy-point-content {
-        color: white;
         font-weight: 700;
-    }
-    .strategy {
-        background: #333;
     }
 }
 
@@ -303,11 +321,15 @@ body, h1, ul {
     .basics-container {
         flex-direction: column;
     }
+    .basics-text {
+        max-width: 100%;
+    }
     .basics-questions {
         max-width: 100%;
     }
     .strategy-container {
         justify-content: center;
+        background: none;
     }
 }
 
@@ -335,5 +357,8 @@ body, h1, ul {
     }
     .text-result, .inner-text {
         padding: 0;
+    }
+    .question-menu {
+        margin: 0;
     }
 }
