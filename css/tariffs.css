@@ -51,7 +51,7 @@
 .first-cell {
   text-align: left;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   color: #414141;
   padding: 0 0.4rem;
 }
@@ -115,10 +115,10 @@
 .callback-input {
   padding: 0.5rem 1rem;
   border: none;
-  border-radius: 3%;
+  border-radius: 3px;
   color: #5E616B;
   margin: 0.1rem;
-  font-size: 1rem;
+  font-size: 0.875rem;
   width: 15rem;
 }
 
