@@ -16,3 +16,28 @@ answer.map(element =>
         console.log(element.childNodes[1].childNodes[3].attributes.src)
 
     }))
+
+
+$('.button-table').click(function () {
+    const className = $(this).attr('class').split(' ').pop();
+    const s = $(this).text();
+    const tariff = $('.upper-cell').filter(function() {
+        return $(this).hasClass(className)
+    }).text();
+    var a = $('.fixed_line').offset();
+
+    $('.content_form').css('top', a.top + 'px');
+    $('.shadow_form').fadeIn(500);
+    $('.content_form').fadeIn(500);
+    // $('form.fon_form .inp.name_service input').val(s);
+    $('.title span').text(tariff);
+});
+
+
+$('.content_form .form_vn .close, .shadow_form').click(function () {
+    $('.shadow_form').fadeOut(500);
+    $('.content_form').fadeOut(500);
+});
+$('.content_form .form_vn').click(function (e) {
+    e.stopImmediatePropagation();
+});

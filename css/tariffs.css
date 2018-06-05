@@ -61,6 +61,7 @@
 }
 
 .upper-cell {
+  width: 150px;
   font-size: 16px;
   border: 1px solid #dddfe4;
   text-transform: uppercase;
@@ -132,6 +133,10 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background: #64a009;
+}
+
 .button-table {
   padding: 0.8rem 1.5rem;
   border-radius: 5%;
@@ -141,6 +146,15 @@
 
 .button-call {
   border-radius: 5px;
+}
+
+@media screen and (max-width: 1284px) {
+  .upper-cell {
+    width: 100px;
+  }
+  .helper-table {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1220px) {
@@ -161,11 +175,7 @@
   }
 }
 
-@media screen and (max-width: 1008px) {
-  .helper-table {
-    width: 100%;
-  }
-}
+@media screen and (max-width: 1008px) {}
 
 @media screen and (max-width: 780px) {
   .table-desktop {
