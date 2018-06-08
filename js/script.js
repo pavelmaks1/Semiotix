@@ -41,3 +41,31 @@ $('.content_form .form_vn .close, .shadow_form').click(function () {
 $('.content_form .form_vn').click(function (e) {
     e.stopImmediatePropagation();
 });
+
+
+$('.fon_form').submit(function(event) {
+    event.preventDefault();
+
+    const $form = $(this);
+
+    const serializeData = $form.serialize();
+
+    request = $.ajax({
+        url: "/form.php",
+        type: "post",
+        data: serializedData
+    });
+
+    request.done(function (response, textStatus, jqXHR) {
+        // Log a message to the console
+        console.log("Hooray, it worked!");
+    });
+
+    request.fail(function (jqXHR, textStatus, errorThrown) {
+        // Log the error to the console
+        console.error(
+            "The following error occurred: " +
+            textStatus, errorThrown
+        );
+    });
+})
